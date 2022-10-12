@@ -30,3 +30,9 @@ def compute_loss_mae(y, tx, w):
     """
     error = y - np.dot(tx, w)
     return np.sum(np.abs(error))/len(error)
+
+def compute_loss(y, tx, w, cost = 'mse'):
+    if(cost == 'mse'):
+        return compute_loss_mse(y, tx, w)
+    else:
+        return compute_loss_mae(y, tx, w)
