@@ -15,7 +15,7 @@ def compute_loss_mse(y, tx, w):
         the value of the loss (a scalar), corresponding to the input parameters w.
     """
     error = y - np.dot(tx, w)
-    return np.dot(error.T, error)/(2*len(error))
+    return np.mean(error**2)/2
 
 def compute_loss_mae(y, tx, w):
     """Calculate the loss using either MAE.
