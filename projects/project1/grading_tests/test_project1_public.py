@@ -134,7 +134,6 @@ def test_mean_squared_error_sgd(student_implementations, y, tx, initial_w):
     assert loss.ndim == 0
     assert w.shape == expected_w.shape
 
-
 def test_least_squares(student_implementations, y, tx):
     w, loss = student_implementations.least_squares(y, tx)
 
