@@ -31,10 +31,12 @@ def grid_search(y, tx, w0, w1):
             w = np.array([row, col])
             losses[ind_row, ind_col] = compute_loss(y, tx, w)
     return losses
+
+
 ### TEMPLATE
-## ***************************************************
-## INSERT YOUR CODE HERE
-## TODO: Paste your implementation of grid_search
-##       here when it is done.
-## ***************************************************
+# # ***************************************************
+# # INSERT YOUR CODE HERE
+# # TODO: Paste your implementation of grid_search
+# #       here when it is done.
+# # ***************************************************
 ### END SOLUTION
